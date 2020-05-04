@@ -1,0 +1,27 @@
+<testsuite failures="0" name="features/firstTest.feature" skipped="0" tests="2" time="5.341892">
+  <testcase classname="features.firstTest" name="list user with name as Tom in first test feature" time="2.685538">
+    <system-out>* url 'https://gorest.co.in' .............................................. passed
+* header Authorization = 'Bearer jHQfgBru_xaZm1MyYvStCgE4KMsxTLGVRw-W' .... passed
+Given path '/public-api/users' ............................................ passed
+And param first_name = 'Tom' .............................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+Then match response.result[*].first_name contains ["Tomas"] ............... passed</system-out>
+  </testcase>
+  <testcase classname="features.firstTest" name="list user with name as Harry in 2nd feature 2nd scenario" time="2.656353">
+    <system-out>* url 'https://gorest.co.in' .............................................. passed
+* header Authorization = 'Bearer jHQfgBru_xaZm1MyYvStCgE4KMsxTLGVRw-W' .... passed
+Given path '/public-api/users' ............................................ passed
+And param first_name = 'Tom' .............................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+Then match response.result[*].first_name contains ["Tomas"] ............... passed
+* url 'https://gorest.co.in' .............................................. passed
+* header Authorization = 'Bearer jHQfgBru_xaZm1MyYvStCgE4KMsxTLGVRw-W' .... passed
+Given path '/public-api/users' ............................................ passed
+And param first_name = 'Harry' ............................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+Then match response.result[*].first_name contains ["Harry"] ............... passed</system-out>
+  </testcase>
+</testsuite>

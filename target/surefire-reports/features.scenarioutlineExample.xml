@@ -1,0 +1,24 @@
+<testsuite failures="1" name="features/scenarioutlineExample.feature" skipped="0" tests="1" time="2.746295">
+  <testcase classname="features.scenarioutlineExample" name="Create a user with post request" time="2.746295">
+    <failure message="scenarioutlineExample.feature:15 - path: $.result.first_name, actual: null, expected: 'Chris', reason: actual json-path does not exist">* url 'https://gorest.co.in' .............................................. passed
+* header Authorization = 'Bearer jHQfgBru_xaZm1MyYvStCgE4KMsxTLGVRw-W' .... passed
+Given path '/public-api/users' ............................................ passed
+And request {"first_name":Chris,"last_name":Martin,"gender":male,"dob":08-27-1985,"email":chrismarti325sspe@gmail.com,"address":newyork,"website":https://chrismartin.com,"status":active} . passed
+When method POST .......................................................... passed
+Then status 200 ........................................................... passed
+And match responseType == 'json' .......................................... passed
+And match response.result.first_name == 'Chris' ........................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: scenarioutlineExample.feature:15 - path: $.result.first_name, actual: null, expected: 'Chris', reason: actual json-path does not exist&#13;
+	at ✽.And match response.result.first_name == 'Chris' (scenarioutlineExample.feature:15)&#13;
+
+* def id = response.result.id ............................................. skipped
+Given path '/public-api/users', id ........................................ skipped
+And header Authorization = 'Bearer jHQfgBru_xaZm1MyYvStCgE4KMsxTLGVRw-W' .. skipped
+When method get ........................................................... skipped
+Then status 200 ........................................................... skipped
+And match response.result.first_name == 'Chris' ........................... skipped
+And match response.result.last_name == 'Martin' ........................... skipped</failure>
+  </testcase>
+</testsuite>

@@ -1,0 +1,11 @@
+<testsuite failures="0" name="features/thirdTest.feature" skipped="0" tests="1" time="2.694994">
+  <testcase classname="features.thirdTest" name="list user with name as Tom in 2nd test feature" time="2.694994">
+    <system-out>* url 'https://gorest.co.in' .............................................. passed
+* header Authorization = 'Bearer jHQfgBru_xaZm1MyYvStCgE4KMsxTLGVRw-W' .... passed
+Given path '/public-api/users' ............................................ passed
+And param first_name = 'Tom' .............................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+Then match response.result[*].first_name contains ["Tomas"] ............... passed</system-out>
+  </testcase>
+</testsuite>
