@@ -17,7 +17,7 @@ import com.intuit.karate.Runner;
 import net.masterthought.cucumber.Configuration;
 import net.masterthought.cucumber.ReportBuilder;
 
-@KarateOptions(tags = {"@smoke,@sanity,@reg,@nonreg"})
+@KarateOptions(tags = {"@smoke,@sanity,@reg"})
 public class APIRunnerTest {
 	
 	 @Test
