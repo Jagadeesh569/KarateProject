@@ -26,5 +26,5 @@ Feature: Demonstrate scenario Outline example
 	
 		Examples:
 		| fname | lname | gender | dob | email | phone | address | website | status |
-		| Chris | Martin | male | 08-27-1985 | chrismarti325sspe@gmail.com | 5183641121 |newyork | https://chrismartin.com | active |
+		| Chris | Martin | male | 08-27-1985 | chrismarti90325sspe@gmail.com | 5183641121 |newyork | https://chrismartin.com | active |
 		#| Jim | Soulman | male | 08-27-1885 | jimmysoul12@gmail.com | 5183641021 |newyork | https://chrismartin.com | active |
